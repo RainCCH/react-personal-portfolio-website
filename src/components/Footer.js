@@ -22,7 +22,7 @@ function Footer() {
         <InstagramIcon />
       </a>
       </div>
-      <p> &copy; 2022 pedrotech.com</p>
+      <p> &copy; 2024 rainchoi.com</p>
     </div>
   );
 }

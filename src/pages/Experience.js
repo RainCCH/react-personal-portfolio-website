@@ -51,6 +51,7 @@ function Experience() {
             Research Intern
           </h4>
           <p>Completed the debugging of Temporal Action Localization part of INTERN 2.0.</p>
+          <br />
           <a href="https://github.com/OpenGVLab/InternVideo/tree/main/InternVideo1/Downstream/Temporal-Action-Localization" 
             style={{ textDecoration: "underline", color: "#007bff" }} // This line applies the underscore and color styling
             target="_blank" 
