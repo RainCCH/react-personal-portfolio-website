@@ -1,22 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
+import InstagramIcon from "@material-ui/icons/Instagram";
+import { LinearGradient } from 'react-text-gradients';
+import { Transition } from 'react-transition-group';
 import "../styles/Home.css";
 
+const duration = 1500;
+const defaultStyle = {
+  transition: `opacity ${duration}ms ease-in-out`,
+  opacity: 0,
+};
+
+const transitionStyles = {
+  entering: { opacity: 1 },
+  entered: { opacity: 1 },
+  exiting: { opacity: 0 },
+  exited: { opacity: 0 },
+};
+
+const Fade = ({ in: inProp, children }) => (
+  <Transition in={inProp} timeout={duration}>
+    {(state) => (
+      <div style={{
+        ...defaultStyle,
+        ...transitionStyles[state]
+      }}>
+        {children}
+      </div>
+    )}
+  </Transition>
+);
+
 function Home() {
+  const [FadeIn, setFadeIn] = useState(false);
+  useEffect(() => {
+    setFadeIn(true);
+  }, []);
   return (
     <div className="home">
       <div className="about">
-        <h2> Hi, My Name is Pedro</h2>
+        <Fade in={FadeIn} >
+          <h2>
+            <LinearGradient gradient={['to left', '#17acff ,#ff68f0']}>
+              Welcome to Rain Choi's Personal Portfolio!
+            </LinearGradient>
+          </h2>
+        </Fade>
         <div className="prompt">
-          <p>A software developer with a passion for learning and creating.</p>
-          <LinkedInIcon />
-          <EmailIcon />
-          <GithubIcon />
+          <Fade in={FadeIn} >
+            <p>
+              <LinearGradient gradient={['to left', '#17acff ,#ff68f0']}>
+                A software developer with a passion for learning and creating.
+              </LinearGradient>
+            </p>
+            <a href="https://www.linkedin.com/in/rain-choi" target="_blank" rel="noopener noreferrer">
+              <LinkedInIcon />
+            </a>
+            <a href="chchoi@uwaterloo.ca">
+              <EmailIcon />
+            </a>
+            <a href="https://github.com/RainCCH" target="_blank" rel="noopener noreferrer">
+              <GithubIcon />
+            </a>
+            <a href="https://www.instagram.com/rainchoi.c.h/" target="_blank" rel="noopener noreferrer">
+              <InstagramIcon />
+            </a>
+          </Fade>
         </div>
       </div>
-      <div className="skills">
+      {/* <div className="skills">
         <h1> Skills</h1>
         <ol className="list">
           <li className="item">
@@ -38,7 +92,7 @@ function Home() {
             <span>JavaScript, Java, Python, C#, C, C++, TypeScript, Go</span>
           </li>
         </ol>
-      </div>
+      </div> */}
     </div>
   );
 }
