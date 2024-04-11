@@ -1,8 +1,8 @@
 .about-container {
     color: white;
-    background-color: #121212; /* dark background */
-    padding: 50px;
-    border-radius: 8px;
+    background-color: #021419; /* dark background */
+    padding: 0px;
+    border-radius: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,9 +10,15 @@
     min-height: 100vh; /* fill the screen */
 }
 
+.about-header {
+    font-size: 50px; /* adjust as needed */
+    color: #13d9d6; /* light blue color */
+    margin-bottom: 20px;
+}
+
 .about-photo {
-    width: 150px; /* adjust as needed */
-    height: 150px; /* adjust as needed */
+    width: 400px; /* adjust as needed */
+    height: 400px; /* adjust as needed */
     border-radius: 50%; /* circular photo */
     object-fit: cover;
     margin-bottom: 20px;
@@ -20,11 +26,21 @@
 
 .about-text {
     font-size: 1.2rem; /* adjust as needed */
-    max-width: 600px; /* adjust as needed */
+    max-width: 1100px; /* adjust as needed */
     text-align: center;
     line-height: 1.5;
 }
 
 .text-highlight {
-    color: #e91e63; /* pink color for highlights */
+    color: #e6e91e; /* pink color for highlights */
+}
+
+.school-link {
+    color: #17acff; /* The color of the link */
+    text-decoration: none; /* Removes underline from links */
+}
+  
+.school-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+    color: #ff68f0; /* Changes color on hover */
 }
