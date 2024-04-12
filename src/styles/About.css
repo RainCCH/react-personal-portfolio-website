@@ -1,13 +1,15 @@
 .about-container {
     color: white;
-    background-color: #021419; /* dark background */
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    background-position: center;
     padding: 0px;
     border-radius: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 100vh; /* fill the screen */
+    height: calc(100vh - 100px);
 }
 
 .about-header {
