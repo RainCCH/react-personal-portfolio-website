@@ -3,6 +3,7 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
 import InstagramIcon from "@material-ui/icons/Instagram";
+import ResumeIcon from "@material-ui/icons/Description";
 import { LinearGradient } from 'react-text-gradients';
 import { Transition } from 'react-transition-group';
 import "../styles/Home.css";
@@ -66,6 +67,9 @@ function Home() {
             </a>
             <a href="https://www.instagram.com/rainchoi.c.h/" target="_blank" rel="noopener noreferrer">
               <InstagramIcon />
+            </a>
+            <a href={`${process.env.PUBLIC_URL}/resume.pdf`}f target="_blank" rel="noopener noreferrer">
+              <ResumeIcon />
             </a>
           </Fade>
         </div>
