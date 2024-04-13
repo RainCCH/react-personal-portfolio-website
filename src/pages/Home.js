@@ -68,7 +68,7 @@ function Home() {
             <a href="https://www.instagram.com/rainchoi.c.h/" target="_blank" rel="noopener noreferrer">
               <InstagramIcon />
             </a>
-            <a href={`${process.env.PUBLIC_URL}/resume.pdf`}f target="_blank" rel="noopener noreferrer">
+            <a href={`${process.env.PUBLIC_URL}/resume.jpg`}f target="_blank" rel="noopener noreferrer">
               <ResumeIcon />
             </a>
           </Fade>

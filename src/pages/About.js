@@ -52,7 +52,7 @@ const About = () => {
         Hi there, My name is <span className="text-highlight">Chong Hou(Rain) Choi</span>. <br />
         I'm currently a master's student at the <a href="https://uwaterloo.ca/" target="_blank" rel="noopener noreferrer" className="school-link">University of Waterloo</a>, majoring in Electrical and Computer Engineering. 
         Before coming to Canada, I received my bachelor's degree from <a href="https://www.tsinghua.edu.cn/en/" target="_blank" rel="noopener noreferrer" className="school-link">Tsinghua University</a>, majoring in Automation Engineering.<br />
-        I am currently seeking software development internship opportunities in Canada. Here is my <a href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank" className='school-link'>resume</a>. Should you find my skills and experiences align with your needs, please do not hesitate to contact me! <br />
+        I am currently seeking software development internship opportunities in Canada. Here is my <a href={`${process.env.PUBLIC_URL}/resume.jpg`} target="_blank" className='school-link'>resume</a>. Should you find my skills and experiences align with your needs, please do not hesitate to contact me! <br />
       </p>
       </Fade>
     </div>
